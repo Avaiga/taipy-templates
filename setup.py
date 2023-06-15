@@ -13,8 +13,8 @@
 
 import json
 import os
-from setuptools import find_namespace_packages, find_packages, setup
 
+from setuptools import find_namespace_packages, find_packages, setup
 
 with open("README.md", "rb") as readme_file:
     readme = readme_file.read().decode("UTF-8")
@@ -41,7 +41,7 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
     ],
-    description="An open-source repository contains Taipy templates and scaffoldings.",
+    description="An open-source package holding Taipy application templates.",
     license="Apache License 2.0",
     long_description=readme,
     long_description_content_type="text/markdown",
