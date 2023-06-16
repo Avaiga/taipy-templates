@@ -24,11 +24,13 @@ specific language governing permissions and limitations under the License.
 
 Taipy is a Python library for creating Business Applications. More information on our [website](https://www.taipy.io).
 
-Taipy templates is a repository that contains templates and scaffoldings created and maintained by Taipy. It helps users getting started with a simple and ready-to-go application.
+Taipy templates is a repository that contains templates and scaffoldings created and maintained by Taipy. It helps
+users getting started with a simple and ready-to-go application.
 
 A more in depth documentation of taipy can be found [here](https://docs.taipy.io).
 
-To create a Taipy application using this template, first you need to install Taipy (> 2.2). Then from a terminal, run the following command.
+To create a Taipy application using this template, first you need to install Taipy (>= 2.3). Then from a terminal,
+run the following command.
 ```
 $ taipy create
 ```
@@ -49,7 +51,7 @@ Want to be part of the _Taipy_ community? Check out our [`CODE_OF_CONDUCT.md`](C
 
 ## Directory Structure
 
-- `src/taipy/templates/`: Contains each template in a dedicated sub-folder with the following structure:
+- `src/taipy/templates/`: Contains each template in a dedicated sub-folder.
 - `CODE_OF_CONDUCT.md`: Code of conduct for members and contributors of _taipy_.
 - `CONTRIBUTING.md`: Instructions to contribute to _taipy_.
 - `LICENSE`: The Apache 2.0 License.
