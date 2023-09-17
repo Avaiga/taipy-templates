@@ -1,6 +1,6 @@
 from config.config import configure
 from pages import scenario_page
-from pages.root import *
+from pages.root import root, selected_scenario, selected_data_node, content
 
 import taipy as tp
 from taipy import Core, Gui
