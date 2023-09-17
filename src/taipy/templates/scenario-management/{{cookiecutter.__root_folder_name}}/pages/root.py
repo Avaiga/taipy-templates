@@ -1,5 +1,3 @@
-from typing import Dict
-
 from taipy.gui import Markdown
 
 selected_scenario = None

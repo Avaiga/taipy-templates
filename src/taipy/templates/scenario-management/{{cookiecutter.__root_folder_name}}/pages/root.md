@@ -5,7 +5,7 @@
 <|{selected_scenario}|scenario_selector|>
 
 <|part|render={selected_scenario}|
-<|{selected_data_node}|data_node_selector|not display_cycles|not display_cycles|>
+<|{selected_data_node}|data_node_selector|not display_cycles|>
 |>
 |>
 
