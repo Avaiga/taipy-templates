@@ -1,0 +1,12 @@
+autopep8
+black
+cookiecutter = "==2.1.1"
+flake8
+flake8-docstrings
+isort
+mypy
+pre-commit
+pytest
+taipy @ git+https://github.com/avaiga/taipy.git@develop
+tox
+types-python-dateutil
