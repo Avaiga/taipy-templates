@@ -23,6 +23,9 @@ jobs:
           python-version: ${{ matrix.python-versions }}
           cache: 'pipenv'
 
+      - name: Install pipenv
+        run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
+
       - name: Tests
         run: |
           pip install tox
