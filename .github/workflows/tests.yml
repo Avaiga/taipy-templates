@@ -13,6 +13,13 @@ jobs:
       matrix:
         python-versions: ['3.8', '3.9', '3.10', '3.11']
         os: [ubuntu-latest, windows-latest, macos-latest]
+        include:
+          - os: ubuntu-latest
+            path: ~/.cache/pip
+          - os: macos-latest
+            path: ~/Library/Caches/pip
+          - os: windows-latest
+            path: ~\AppData\Local\pip\Cache
       fail-fast: false
     runs-on: ${{ matrix.os }}
 
@@ -24,8 +31,10 @@ jobs:
 
       - uses: actions/cache@v3
         with:
-          path: ${{ env.pythonLocation }}
-          key: ${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ hashFiles('dev-requirements.txt') }}
+          path: ${{ matrix.path }}/${{ matrix.python-versions }}
+          key: ${{ runner.os }}-pip-${{ matrix.python-versions }}-${{ hashFiles('dev-requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: Tests
         run: |
