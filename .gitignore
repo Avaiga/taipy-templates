@@ -3,7 +3,6 @@
 __pycache__
 
 # Distribution / packaging
-Pipfile.lock
 build/
 *.egg-info/
 # mypy
