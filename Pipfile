@@ -15,7 +15,7 @@ isort = "*"
 mypy = "*"
 pre-commit = "*"
 pytest = "*"
-taipy = {ref = "develop", git = "https://github.com/avaiga/taipy.git"}
+taipy = "==3.0"
 tox = "*"
 types-python-dateutil = "*"
 
