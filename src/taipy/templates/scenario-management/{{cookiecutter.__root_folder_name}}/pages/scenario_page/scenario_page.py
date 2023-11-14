@@ -5,7 +5,6 @@ from .data_node_management import manage_partial
 
 def notify_on_submission(state, submitable, details):
     if details['submission_status'] == 'COMPLETED':
-        state.refresh('selected_scenario')
         notify(state, "success", "Submision completed!")
     elif details['submission_status'] == 'FAILED':
         notify(state, "error", "Submission failed!")
